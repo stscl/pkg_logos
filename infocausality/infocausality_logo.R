@@ -12,26 +12,26 @@ fig = sticker(
     s_height = 0.6,
     package = "",
     p_family = "ShineTypewriter",
-    p_size = 10.5,
+    p_size = 5.5,
     p_color = ggplot2::alpha("#efd298",.95),#ggplot2::alpha("#3e3221",.75),
     p_x = 1.00,
     p_y = 0.585,
     dpi = 300,
     asp = 1,
-    h_size = 5.5,
+    h_size = 2.5,
     h_color = ggplot2::alpha("#6d4b2c",.95),
     h_fill = ggplot2::alpha('#efdab7',0.95),
     white_around_sticker = F,
     url = "https://stscl.github.io/infocausality",
     u_color = ggplot2::alpha("#6d4b2c",.95),
-    u_size = 13.5,
+    u_size = 4.55,
     filename = "./infocausality/infocausality.png"
 )
 
-fig + ggview::canvas(1600,1800,units = "px",bg = "transparent") 
+# fig + ggview::canvas(1600,1800,units = "px",bg = "transparent") 
 
-ggview::save_ggplot(fig + ggview::canvas(1600,1800,units = "px",bg = "transparent"),
-                    "./infocausality/infocausality.png")
+# ggview::save_ggplot(fig + ggview::canvas(1600,1800,units = "px",bg = "transparent"),
+#                     "./infocausality/infocausality.png")
 
 image_read('./infocausality/infocausality.png') |> 
   image_resize("240x278")|> 
