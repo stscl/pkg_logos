@@ -92,3 +92,14 @@ fig_bg + ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600)
 
 ggview::save_ggplot(fig_bg + ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600),
                     "./infosc/bg.png")
+
+attractor = figpatch::fig("./infosc/M.png")
+
+fig_base = fig_bg +
+  ggplot2::annotation_custom(
+    grob = ggplot2::ggplotGrob(attractor),
+    xmin = -1.275
+  ) +
+  ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600)
+
+ggview::save_ggplot(fig_base, "./infosc/base.png")

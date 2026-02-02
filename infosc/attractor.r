@@ -84,7 +84,7 @@ png(filename = paste0(schematic_dir, "M.png"),
     width = 800, height = 800, res = 150, bg = "transparent")
 
 plot3D::scatter3D(dadras[, 1], dadras[, 2], dadras[, 3],
-                  colvar = NULL, pch = 19, col = "#C0C0C0",
+                  colvar = NULL, pch = 19, col = "#ECECEC",
                   theta = 45, phi = 60, cex = 0.25, 
                   bty = "n", axes = FALSE)
 
