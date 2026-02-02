@@ -41,19 +41,11 @@ region_data <- base::rbind(
   )
 )
 
-# Soft, background-friendly colors for trend semantics (Paul Tol's qualitative palette)
-# Low saturation for readability when used as background/overlay
-color_map <- base::c(
-  increase = "#ea5e5e",  # Soft teal — upward/growth trend
-  decrease = "#91cce7",  # Gentle coral — downward/decline trend  
-  stable   = "#DDCC77"   # Muted gold — neutral/stable trend
-)
-
-color_map <- base::c(
-  increase = "#77725E",  # Soft teal — upward/growth trend
-  decrease = "#4C453B",  # Gentle coral — downward/decline trend  
-  stable   = "#B5A166"   # Muted gold — neutral/stable trend
-)
+# color_map <- base::c(
+#   increase = "#77725E",  # Soft teal — upward/growth trend
+#   decrease = "#4C453B",  # Gentle coral — downward/decline trend  
+#   stable   = "#B5A166"   # Muted gold — neutral/stable trend
+# )
 
 color_map <- base::c(
   increase = "#77725E",  # Deep olive ash — subtle upward movement
