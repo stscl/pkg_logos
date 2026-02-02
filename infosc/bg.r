@@ -65,7 +65,7 @@ color_map <- base::c(
 hex_border <- base::rbind(hex_vertices, hex_vertices[1, ])
 
 # Render hexagon with three seamless regions and gray outer stroke
-ggplot2::ggplot() +
+fig_bg = ggplot2::ggplot() +
   # Three internal regions with soft fills and NO internal borders
   ggplot2::geom_polygon(
     data = region_data,
@@ -94,4 +94,9 @@ ggplot2::ggplot() +
     panel.background = ggplot2::element_rect(fill = "transparent", colour = NA)
   ) +
   # Add minimal padding for visual comfort
-  ggplot2::expand_limits(x = c(-1.15, 1.15), y = c(-1.15, 1.15))
+  ggplot2::expand_limits(x = c(-1.15, 1.15), y = c(-1.15, 1.15))  
+
+fig_bg + ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600)
+
+ggview::save_ggplot(fig_bg + ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600),
+                    "./infosc/bg.png")
