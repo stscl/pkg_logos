@@ -91,9 +91,9 @@ fig_bg = ggplot2::ggplot() +
 fig_bg + ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600)
 
 ggview::save_ggplot(fig_bg + ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600),
-                    "./infosc/bg.png")
+                    "./sigcaus/bg.png")
 
-attractor = figpatch::fig("./infosc/M.png")
+attractor = figpatch::fig("./sigcaus/M.png")
 
 fig_base = fig_bg +
   ggplot2::annotation_custom(
@@ -102,4 +102,4 @@ fig_base = fig_bg +
   ) +
   ggview::canvas(3.6,4.17,bg = "transparent",dpi = 600)
 
-ggview::save_ggplot(fig_base, "./infosc/base.png")
+ggview::save_ggplot(fig_base, "./sigcaus/base.png")

@@ -78,7 +78,7 @@ plot3D::scatter3D(dadras[, 1], dadras[, 2], dadras[, 3],
                   colvar = NULL, pch = 19, col = "grey70",
                   theta = 45, phi = 60, cex = 0.105, bty = "n")
 
-schematic_dir = "./infosc/"
+schematic_dir = "./sigcaus/"
 
 png(filename = paste0(schematic_dir, "M.png"), 
     width = 800, height = 800, res = 150, bg = "transparent")
