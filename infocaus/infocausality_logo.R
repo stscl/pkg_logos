@@ -5,7 +5,7 @@ library(hexSticker)
 library(magick)
 
 fig = sticker(
-    subplot = "./infocausality/bg.png",
+    subplot = "./infocaus/bg.png",
     s_x = 0.992,
     s_y = 1.003,
     s_width = 0.6,
@@ -25,14 +25,14 @@ fig = sticker(
     url = "https://stscl.github.io/infocausality",
     u_color = ggplot2::alpha("#6d4b2c",.95),
     u_size = 4.55,
-    filename = "./infocausality/infocausality.png"
+    filename = "./infocaus/infocausality.png"
 )
 
 # fig + ggview::canvas(1600,1800,units = "px",bg = "transparent") 
 
 # ggview::save_ggplot(fig + ggview::canvas(1600,1800,units = "px",bg = "transparent"),
-#                     "./infocausality/infocausality.png")
+#                     "./infocaus/infocausality.png")
 
-image_read('./infocausality/infocausality.png') |> 
+image_read('./infocaus/infocausality.png') |> 
   image_resize("240x278")|> 
-  image_write('./infocausality/infocausality_logo.png')
+  image_write('./infocaus/infocausality_logo.png')
