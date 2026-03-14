@@ -7,7 +7,7 @@ library(magick)
 fig = sticker(
     subplot = "./infocaus/symbol.png",
     s_x = 0.992,
-    s_y = 1.035,
+    s_y = 1.075,
     s_width = 0.55,
     s_height = 0.55,
     package = "infocaus",
@@ -15,7 +15,7 @@ fig = sticker(
     p_size = 12.5,
     p_color = ggplot2::alpha("#6d4a29",.95),#ggplot2::alpha("#3e3221",.75),
     p_x = 1.00,
-    p_y = 0.305,
+    p_y = 0.365,
     dpi = 300,
     asp = 1,
     h_size = 2.15,
