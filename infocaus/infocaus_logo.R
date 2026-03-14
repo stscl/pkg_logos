@@ -31,8 +31,8 @@ fig = sticker(
 # fig + ggview::canvas(1600,1800,units = "px",bg = "transparent") 
 
 # ggview::save_ggplot(fig + ggview::canvas(1600,1800,units = "px",bg = "transparent"),
-#                     "./infocausality/infocausality.png")
+#                     "./infocaus/infocaus.png")
 
-image_read('./infocausality/infocausality.png') |> 
+image_read('./infocaus/infocaus.png') |> 
   image_resize("240x278")|> 
-  image_write('./infocausality/infocausality_logo.png')
+  image_write('./infocaus/infocaus_logo.png')
